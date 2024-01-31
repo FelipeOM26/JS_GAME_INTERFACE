@@ -114,6 +114,8 @@ function clickTry() {
         document.getElementById('clean').removeAttribute('disabled');
     }
 
+
+    
     intentos++;
     clean();
 
