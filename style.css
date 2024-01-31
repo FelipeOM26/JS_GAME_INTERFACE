@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+.body2 {
+
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.body2::before {
+
+    background-image: url(imagenes/code.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -2;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    border-radius: 1.5rem;
+    width: 80vw;
+    height: 80vh;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.container::before {
+
+    content: '';
+    display: block;
+    background-image: url("imagenes/Ruido.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: fixed;
+    background-size: cover;
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    opacity: 35;
+    z-index: -9;
+
+}
+
+.confJuego {
+
+    position: absolute;
+    left: 1100px;
+
+
+
+}
+
+.texto {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 12vw;
+    top: 22vh;
+    width: 25vw;
+    padding: 1.8rem;
+
+}
+
+.texto-insert {
+
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    position: absolute;
+    padding-bottom: 2rem;
+    width: 22vw;
+    left: 2vw;
+
+
+}
+
+
+.botones {
+
+    display: flex;
+    position: absolute;
+    left: 20vmax;
+    top: 30vmax;
+    gap: 5em;
+
+
+}
+
+.input-usuario {
+    position: absolute;
+    left: 11.8vmax;
+    top: 38vmin;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.imagen-container {
+
+    position: absolute;
+    top: 6.3vmin;
+    left: 40vmax;
+}
+
+.insert-usuario {
+
+    padding: 1.5rem;
+    width: 21vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+
+
+}
+
+.insert-usuario:focus {
+
+    color: blue;
+    padding: 1.5rem;
+    font-size: 24px;
+    outline: 2px solid rgb(73, 160, 214);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.insert-usuario::placeholder {
+
+    font-weight: bold;
+    color: blue;
+    opacity: 0.5;
+    font-family: 'Inter', sans-serif;
+}
+
+.botones {
+    font-family: 'Inter', sans-serif;
+}
+
+.intentar {
+
+    position: absolute;
+    left: -11vmin;
+    padding: 1.5rem;
+    width: 11vw;
+    top: -4vh;
+    border: 2px solid blue;
+    background: rgb(36, 36, 245);
+    border-radius: 15px;
+    cursor: pointer
+}
+
+.botones {
+    position: absolute;
+    display: flex;
+    left: 19vw;
+}
+
+
+.intentar:hover {
+    transform: scale(1.1);
+    background: white;
+    border-color: blue;
+    transition: 1s ease-in-out;
+}
+
+.intentar:active .intentar-span {
+    color: white;
+}
+
+
+#btn-try:active .intentar-span,
+#btn-try:focus .intentar-span {
+    color: white;
+}
+
+.intentar:active {
+    background-color: blue;
+    color: white;
+    transition: 0.2s ease-in-out;
+
+}
+
+
+.new {
+
+    position: absolute;
+    left: 8vw;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid rgb(91, 91, 91);
+    background-color: rgb(162, 164, 164);
+    padding: 1.45rem;
+    width: 11vw;
+    top: -4vh;
+    transition: transform 1s;
+
+}
+
+.new:hover {
+    transform: scale(1.1);
+    background: rgb(255, 0, 0);
+    transition: 1s ease-in-out;
+
+}
+
+
+.new-span {
+
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.intentar-span {
+
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+.bloqueRango {
+
+
+    padding-bottom: 5rem;
+
+}
+
+.bloque-texto {
+
+    position: absolute;
+    display: flex;
+    top: 5vh;
+    width: 40vw;
+}
+
+.titulo-rango {
+
+    padding-bottom: 0.5rem;
+    position: absolute;
+}
+
+.texto-in {
+
+    position: relative;
+    margin-right: 10px;
+
+}
+
+.confJuego {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15vh;
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.bloque-intentos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-con {
+
+    display: flex;
+    position: absolute;
+    top: 22vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11vw;
+    justify-content: center;
+
+}
+
+.number {
+
+    border-radius: 5px;
+    border: none;
+    color: blue;
+    font-weight: bold;
+
+
+}
+
+
+.number:focus {
+
+    color: blue;
+    outline: 2px solid #1354A5;
+}
+
+.number:hover {
+
+
+    outline-color: blue;
+}
+
+.intento {
+
+    border-radius: 5px;
+    border: none;
+    color: blue;
+    font-weight: bold;
+
+
+}
+
+.intento:focus {
+
+    color: blue;
+    outline: 2px solid #1354A5;
+}
+
+.intento:hover {
+
+
+    outline-color: blue;
+}
+
+.btn-con {
+
+
+    border-radius: 10px;
+    padding: 10px;
+    border-color: blue;
+    background-color: #1354A5;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-con:hover {
+
+    background: red;
+    transition: 1s ease-in-out;
+}
+
+.btn-con:active {
+
+    background-color: #1354A5;
+    transition: 0.2s ease-in-out;
+}
+
+.hidden {
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.visible {
+
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}

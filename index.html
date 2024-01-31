@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <link rel="icon" type="imagen/png" href="imagenes/js.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JUEGO</title>
+
+</head>
+
+
+
+
+<body class="body2">
+
+
+    <div class="container">
+
+        <div class="ventanaConfig">
+
+            <div class="confJuego" id="configuracionContainer">
+
+                <div class="bloqueRango">
+                    <legend class="titulo-rango">Indica el rango:</legend>
+                    <div class="bloque-texto">
+
+                        <label for="number" class="texto-in">1 al: </label>
+                        <input type="number" id="number" name="number" class="number" placeholder="Ingresa un numero">
+
+                    </div>
+
+                </div>
+
+                <div class="bloque-intentos">
+                    <label for="intento">Intentos: </label>
+                    <input type="number" id="intento" name="intento" class="intento" placeholder="Ingresa los intentos">
+                </div>
+
+
+
+
+                <div>
+                    <button onclick="configuracion();" id="btn-config" class="btn-con">Comenzar el juego</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="titulo"></div>
+
+        <div class="texto">
+            <h5 id="texto" class="texto-insert">BIENVENIDO</h5>
+        </div>
+
+        <div class="input-usuario">
+            <input type="number" id="numeroUsuario" class="insert-usuario" placeholder="Ingresa un numero">
+        </div>
+
+        <div class="botones">
+
+            <button id="btn-try" onclick="clickTry();" class="intentar"><span class="intentar-span">Try</span></button>
+            <button onclick= "limpiarJuego();" id="clean" class="new"  disabled><span class="new-span" >New</span></button>
+        </div>
+
+        <div class="imagen">
+
+            <img class="imagen-container" id="IA" src="imagenes/ia.png" alt="Imagen de IA" title="IA">
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="appInteractiva.js"></script>
+
+
+</body>
+
+
+
+
+</html>
