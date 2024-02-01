@@ -8,7 +8,7 @@
 
 .body2 {
 
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+   
     height: 100vh;
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@
 
     position: absolute;
     left: -11vmin;
-    padding: 1.5rem;
+    padding: 2em;
     width: 11vw;
     top: -4vh;
     border: 2px solid blue;
@@ -384,5 +384,209 @@
 
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+
+}
+
+
+@media screen and (max-width: 767px){
+
+.body2{
+    background: #041832;
+
+}
+
+
+.container{
+    border: none ;
+}
+
+.container::before{
+    
+    background-image: none;
+}
+
+.ventanaConfig{
+    
+    position: absolute;
+    top: 230vh;
+    left: -85vw;
+    display: flex;
+    flex-direction: row;
+    gap: 80vw;
+    font-size: 30px;
+
+
+}
+.bloqueRango{
+
+    display: flex;
+    flex-direction: row;
+    left: -40vw;
+    position: absolute ;
+    margin-right: 170px;
+    
+}
+
+.imagen-container{
+
+
+    display: flex;
+    position: absolute;
+    left: 150vw;
+    height: 130vh;
+
+}
+
+.texto-insert{
+
+    display: flex;
+    position: absolute;
+    font-size: 80px;
+    top: 40vh;
+
+}
+
+.insert-usuario{
+
+    position: absolute;
+    top: 130vh;
+    left: 50vw;
+    width: 250vw;
+    height: 25vh;
+    border-radius: 0.5em;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.insert-usuario:focus{
+    font-size: 60px;
+    text-align: center;
+}
+
+.botones{
+
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+top: 210vh;
+left: 140vw;
+
+}
+
+
+.new-span{
+
+
+    font-size: 30px;
+    text-align: center;
+}
+.new{
+    display: flex;
+    width: 80vw;
+    height: 10vh;
+    left: 80vw;
+    
+
+}
+
+.intentar{
+
+    position: absolute;
+    left: -30vw;
+    width: 80vw;
+    height: 10vh;
+
+}
+
+.intentar-span{
+    font-size: 30px;
+}
+
+.bloqueRango{
+
+left: -50vw;
+display: flex;
+flex-direction: column;
+
+}
+.titulo-rango{
+    width: 60vw;
+    position: relative;
+}
+
+.bloque-intentos{
+
+    left: 50vw;
+    position: relative;
+}
+
+.number{
+    left: 4vw;
+    position: relative;
+}
+
+.number::placeholder{
+
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+}
+
+.number:focus{
+
+    text-align: center;
+}
+
+#intentos:focus{
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.intento{
+
+    height: 4vh;
+    position: relative;
+    top: 4.5vh;
+    padding: 1.2em;
+    
+}
+
+
+
+.intentos::placeholder{
+
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.texto-in{
+
+    width: 60vw;
+    position: relative;
+}
+
+.bloque-texto{
+
+    position: relative;
+    top: 5vh;
+}
+
+.btn-con{
+
+    position: relative;
+    top: 15vh;
+    width: 30vw;
+    padding: 1.5em;
+}
+
+
 
 }
